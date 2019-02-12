@@ -1,0 +1,17 @@
+<div class="container">
+  <h1><%= @flat.name %> <i class="fas fa-home"></i> </h1>
+  <h2><%= @flat.description.capitalize %></h2>
+  <p><i class="far fa-address-card"></i> Address: <%= @flat.address %> </p>
+
+  <ul class="list-inline">
+    <li class="list-inline-item">
+      <%= link_to "Edit Flat Listing", edit_flat_path, class: "btn btn-primary"%>
+    </li>
+    <li class="list-inline-item">
+      <%= link_to "Back to All Flats", flats_path, class: "btn btn-primary"%>
+    </li>
+      <li class="list-inline-item">
+      <%= link_to "Delete", flat_path, method: :delete, class: "btn btn-info"%>
+    </li>
+  </ul>
+</div>

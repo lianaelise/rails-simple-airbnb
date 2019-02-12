@@ -1,0 +1,23 @@
+<div class="banner">
+  <h1><i class="fas fa-home"></i>  Available Flats  <i class="fas fa-home"></i></h1>
+  <h2>Find Your Perfect Flat</h2>
+  <%= link_to "Add A Flat", new_flat_path, class: "btn btn-primary add-btn"%>
+</div>
+
+<div class="wrapper-pink">
+  <div class="container">
+    <div class="card-group">
+      <% @flats.each do |flat| %>
+        <div class="card" style="max-width: 18rem;">
+          <h2 class="card-header"> <%= link_to flat.name, flat_path(flat), class: "link" %> </h2>
+          <p class="card-text"> <%= flat.address %> </p>
+          <p class="card-body">
+            <i class="fas fa-users"></i> <%= flat.number_of_guests %>
+            <i class="fas fa-dollar-sign"></i> <%= flat.price_per_night %>
+          </p>
+          <%= link_to "click for more info", flat_path(flat), class: "link-two"%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

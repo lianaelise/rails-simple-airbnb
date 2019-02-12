@@ -1,0 +1,33 @@
+<div class="banner">
+  <h1>Add Your Flat <i class="fas fa-home"></i> </h1>
+  <%= link_to "Back to All Flats", flats_path, class: "btn btn-primary"%>
+</div>
+
+<%= form_for(@flat) do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Can't be emtpy", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_field :address, placeholder: "Can't be empty", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_field :description, placeholder: "You know its a gem - so do it some justice", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :price_per_night %>
+    <%= f.text_field :price_per_night, placeholder: "What's it worth", class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :number_of_guests %>
+    <%= f.text_field :number_of_guests, placeholder: "Reasonable", class: 'form-control' %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>

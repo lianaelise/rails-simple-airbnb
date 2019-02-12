@@ -1,0 +1,116 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  color: var(--main-lig);
+}
+
+h1 {
+  font-size:24px;
+  color: var(--main-med);
+}
+
+h2 {
+  font-size:18px;
+  color: var(--main-dk);
+}
+
+.nav-bar{
+  color: white;
+  background: var(--main-dk);
+  padding: 5px 25px 1px 25px;
+}
+
+.banner {
+  display: flex;
+  padding: 15px;
+  margin: 10px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-color: var(--main-dk);
+}
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  text-align: center;
+  margin: 10px;
+}
+
+.card-body{
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: var(--contrast);
+  border-color: var(--contrast);
+}
+
+.btn-primary:hover {
+  color: var(--contrast);
+  background-color: white;
+  border-color: var(--contrast);
+}
+
+.link {
+  text-decoration: none;
+  font-style: bold;
+  color: var(--contrast);
+  padding: 10px;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: none;
+  font-style: bold;
+  color: var(--contrast);
+  padding: 10px;
+  width: 50%;
+  height: 40px;
+}
+
+.link-two {
+  text-decoration: none;
+  color: var(--contrast);
+  font-style: italic;
+  font-size: 10px;
+}
+
+.link-two:hover {
+  text-decoration: none;
+  color: var(--contrast);
+  font-style: italic;
+  font-size: 10px;
+}
+
+.link-nav {
+  text-decoration: none;
+  font-style: bold;
+  color: white;
+}
+
+.table {
+  border-color: var(--contrast);
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+:root {
+  --main-dk: #015249;
+  --main-med: #57bc90;
+  --main-lig: #a5a5af;
+  --contrast: #77c9d4;
+}
+
